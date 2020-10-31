@@ -1,0 +1,6 @@
+framework module Pods_WisHope_WisHopeUITests {
+  umbrella header "Pods-WisHope-WisHopeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

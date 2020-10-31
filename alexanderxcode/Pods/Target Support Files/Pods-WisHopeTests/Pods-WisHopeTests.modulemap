@@ -1,0 +1,6 @@
+framework module Pods_WisHopeTests {
+  umbrella header "Pods-WisHopeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
