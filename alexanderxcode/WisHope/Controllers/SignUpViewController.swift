@@ -63,7 +63,12 @@ class SignUpViewController: UIViewController {
      // Get the new view controller using segue.destination.
      // Pass the selected object to the new view controller.
      }
-     */
+ */
+    // Added a back button to go back to other storyboard
+     @IBAction func backPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+     }
+     
     /// processes all information in sign up form
     /// - Parameter sender: sign up button
     @IBAction func signUpTapped(_ sender: Any) {
@@ -91,9 +96,9 @@ class SignUpViewController: UIViewController {
                                                                                "online": false,
                                                                                "role": "recoveree",
                                                                                "uid": result!.user.uid]){ (error) in
-                                                                                if error != nil{
-                                                                                    self.showError(message: "Error saving user data")
-                                                                                }
+                        if error != nil{
+                            self.showError(message: "Error saving user data")
+                        }
                     }
                     self.trasitionToHome()
                 }

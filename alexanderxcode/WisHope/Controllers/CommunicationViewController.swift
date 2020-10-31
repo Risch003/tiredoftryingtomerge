@@ -47,11 +47,18 @@ class CommunicationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Utilities.styleFilledButton(disconnectButton)
-        disconnectButton.backgroundColor = UIColor.init(red: 255, green: 255, blue: 255, alpha: 1)
+        //Utilities.styleFilledButton(disconnectButton)
+        //disconnectButton.backgroundColor = UIColor.init(red: 255, green: 255, blue: 255, alpha: 1)
         
-        Utilities.styleFilledButton(muteButton)
-        muteButton.backgroundColor = UIColor.init(red: 255, green: 255, blue: 255, alpha: 1)
+        //Utilities.styleFilledButton(muteButton)
+        //muteButton.backgroundColor = UIColor.init(red: 255, green: 255, blue: 255, alpha: 1)
+        videoButton.frame = CGRect(x: 160, y: 100, width: 50, height: 50)
+        videoButton.layer.cornerRadius = 0.5 * videoButton.bounds.size.width
+        muteButton.frame = CGRect(x: 160, y: 100, width: 50, height: 50)
+        muteButton.layer.cornerRadius = 0.5 * muteButton.bounds.size.width
+    
+        
+        
         
         if PlatformUtils.isSimulator {
             let imageName = "avatar"
@@ -66,83 +73,85 @@ class CommunicationViewController: UIViewController {
         }
         // Do any additional setup after loading the view.
         
-            // Configure access token either from server or manually.
-            // If the default wasn't changed, try fetching from server.
-            accessToken = ""
-
-            // Prepare URL
-            let url = URL(string: "https://us-central1-wishope-247fd.cloudfunctions.net/appFuncs/access-token")
-            guard let requestUrl = url else { fatalError() }
-
-            // Prepare URL Request Object
-            var request = URLRequest(url: requestUrl)
-            request.httpMethod = "POST"
-             
-            //generate string
-        let myString = "userEmail=\(User.email)&room=\(roomString ?? "")"
-            
-            // HTTP Request Parameters which will be sent in HTTP Request Body
-            let postString = myString;
-            //print(myString)
-            // Set HTTP Request Body
-            request.httpBody = postString.data(using: String.Encoding.utf8);
+        // Configure access token either from server or manually.
+        // If the default wasn't changed, try fetching from server.
+        accessToken = ""
         
-            // Perform HTTP Request
-            let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-                    
-                    // Check for Error
-                    if let error = error {
-                        print("Error took place \(error)")
-                        return
-                    }
-             
-                    // Convert HTTP Response Data to a String
-                    if let data = data, let dataString = String(data: data, encoding: .utf8) {
-                        print("Response data string:\n \(dataString)")
-                        self.accessToken = dataString
-                        //display error if this doesnt work
-                    }
-            }
-            task.resume()
-            //MARK:-IMPORTANT
-            //please change this to async call or make a call back
-            sleep(1)
+        // Prepare URL
+        let url = URL(string: "https://us-central1-wishope-247fd.cloudfunctions.net/appFuncs/access-token")
+        guard let requestUrl = url else { fatalError() }
+        
+        // Prepare URL Request Object
+        var request = URLRequest(url: requestUrl)
+        request.httpMethod = "POST"
+        
+        //generate string
+        let myString = "userEmail=\(User.email)&room=\(roomString ?? "")"
+        
+        // HTTP Request Parameters which will be sent in HTTP Request Body
+        let postString = myString;
+        //print(myString)
+        // Set HTTP Request Body
+        request.httpBody = postString.data(using: String.Encoding.utf8);
+        
+        // Perform HTTP Request
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             
-            // Prepare local media which we will share with Room Participants.
-            self.prepareLocalMedia()
-            // Preparing the connect options with the access token that we fetched (or hardcoded).
-            let connectOptions = ConnectOptions(token: accessToken) { (builder) in
-                
-                // Use the local media that we prepared earlier.
-                builder.audioTracks = self.localAudioTrack != nil ? [self.localAudioTrack!] : [LocalAudioTrack]()
-                builder.videoTracks = self.localVideoTrack != nil ? [self.localVideoTrack!] : [LocalVideoTrack]()
-                
-                // Use the preferred audio codec
-                if let preferredAudioCodec = Settings.shared.audioCodec {
-                    builder.preferredAudioCodecs = [preferredAudioCodec]
-                }
-                
-                // Use the preferred video codec
-                if let preferredVideoCodec = Settings.shared.videoCodec {
-                    builder.preferredVideoCodecs = [preferredVideoCodec]
-                }
-                
-                // Use the preferred encoding parameters
-                if let encodingParameters = Settings.shared.getEncodingParameters() {
-                    builder.encodingParameters = encodingParameters
-                }
-                
-                // Use the preferred signaling region
-                if let signalingRegion = Settings.shared.signalingRegion {
-                    builder.region = signalingRegion
-                }
-                builder.roomName = ""
+            // Check for Error
+            if let error = error {
+                print("Error took place \(error)")
+                return
             }
-            // Connect to the Room using the options we provided.
-            room = TwilioVideoSDK.connect(options: connectOptions, delegate: self)
-
             
-            logMessage(messageText: "Attempting to connect to room")
+            // Convert HTTP Response Data to a String
+            if let data = data, let dataString = String(data: data, encoding: .utf8) {
+                print("Response data string:\n \(dataString)")
+                self.accessToken = dataString
+                //display error if this doesnt work
+            }
+        }
+        task.resume()
+        //MARK:-IMPORTANT
+        //please change this to async call or make a call back
+        sleep(1)
+        
+        
+        
+        // Prepare local media which we will share with Room Participants.
+        self.prepareLocalMedia()
+        // Preparing the connect options with the access token that we fetched (or hardcoded).
+        let connectOptions = ConnectOptions(token: accessToken) { (builder) in
+            
+            // Use the local media that we prepared earlier.
+            builder.audioTracks = self.localAudioTrack != nil ? [self.localAudioTrack!] : [LocalAudioTrack]()
+            builder.videoTracks = self.localVideoTrack != nil ? [self.localVideoTrack!] : [LocalVideoTrack]()
+            
+            // Use the preferred audio codec
+            if let preferredAudioCodec = Settings.shared.audioCodec {
+                builder.preferredAudioCodecs = [preferredAudioCodec]
+            }
+            
+            // Use the preferred video codec
+            if let preferredVideoCodec = Settings.shared.videoCodec {
+                builder.preferredVideoCodecs = [preferredVideoCodec]
+            }
+            
+            // Use the preferred encoding parameters
+            if let encodingParameters = Settings.shared.getEncodingParameters() {
+                builder.encodingParameters = encodingParameters
+            }
+            
+            // Use the preferred signaling region
+            if let signalingRegion = Settings.shared.signalingRegion {
+                builder.region = signalingRegion
+            }
+            builder.roomName = ""
+        }
+        // Connect to the Room using the options we provided.
+        room = TwilioVideoSDK.connect(options: connectOptions, delegate: self)
+        
+        
+        logMessage(messageText: "Attempting to connect to room")
     }
     
     func startPreview() {
@@ -187,6 +196,9 @@ class CommunicationViewController: UIViewController {
         }
     }
     
+    
+    
+    
     @IBAction func disconnect(_ sender: Any) {
         self.room!.disconnect()
         logMessage(messageText: "Attempting to disconnect from room")
@@ -195,16 +207,23 @@ class CommunicationViewController: UIViewController {
         view.window?.makeKeyAndVisible()
     }
     
-    @IBAction func toggleMic(_ sender: Any) {
+    @IBAction func toggleMic(_ sender: UIButton) {
+        
+        sender.isSelected.toggle()
+        
         self.localAudioTrack?.isEnabled = !(self.localAudioTrack?.isEnabled)!
     }
     
     //made on 10/21/20 by Alexander Auraha
     //supposed to toggle video on/off
     //added the function to its corresponding button in the storyboard
-    @IBAction func toggleVideo ( sender: Any) {
+    @IBAction func toggleVideo ( sender: UIButton) {
+        sender.isSelected.toggle()
+        
+        
         self.localVideoTrack?.isEnabled = !(self.localVideoTrack?.isEnabled)!
     }
+    
     
     func prepareLocalMedia() {
         
@@ -225,6 +244,8 @@ class CommunicationViewController: UIViewController {
         }
     }
     
+    
+    
     func logMessage(messageText: String) {
         NSLog(messageText)
     }
@@ -233,7 +254,7 @@ class CommunicationViewController: UIViewController {
         let videoPublications = participant.remoteVideoTracks
         for publication in videoPublications {
             if let subscribedVideoTrack = publication.remoteTrack,
-                publication.isTrackSubscribed {
+               publication.isTrackSubscribed {
                 //setupRemoteVideoView()
                 subscribedVideoTrack.addRenderer(self.remoteView!)
                 self.remoteParticipant = participant
@@ -242,17 +263,17 @@ class CommunicationViewController: UIViewController {
         }
         return false
     }
-
+    
     func renderRemoteParticipants(participants : Array<RemoteParticipant>) {
         for participant in participants {
             // Find the first renderable track.
             if participant.remoteVideoTracks.count > 0,
-                renderRemoteParticipant(participant: participant) {
+               renderRemoteParticipant(participant: participant) {
                 break
             }
         }
     }
-
+    
     func cleanupRemoteParticipant() {
         if self.remoteParticipant != nil {
             self.remoteView?.removeFromSuperview()
@@ -262,16 +283,20 @@ class CommunicationViewController: UIViewController {
     }
 }
 
+
+
+
+
 extension CommunicationViewController : RoomDelegate {
     func roomDidConnect(room: Room) {
         logMessage(messageText: "Connected to room \(room.name) as \(room.localParticipant?.identity ?? "")")
-
+        
         // This example only renders 1 RemoteVideoTrack at a time. Listen for all events to decide which track to render.
         for remoteParticipant in room.remoteParticipants {
             remoteParticipant.delegate = self
         }
     }
-
+    
     func roomDidDisconnect(room: Room, error: Error?) {
         logMessage(messageText: "Disconnected from room \(room.name), error = \(String(describing: error))")
         
@@ -280,67 +305,67 @@ extension CommunicationViewController : RoomDelegate {
         
         //self.showRoomUI(inRoom: false)
     }
-
+    
     func roomDidFailToConnect(room: Room, error: Error) {
         logMessage(messageText: "Failed to connect to room with error = \(String(describing: error))")
         self.room = nil
         
         //self.showRoomUI(inRoom: false)
     }
-
+    
     func roomIsReconnecting(room: Room, error: Error) {
         logMessage(messageText: "Reconnecting to room \(room.name), error = \(String(describing: error))")
     }
-
+    
     func roomDidReconnect(room: Room) {
         logMessage(messageText: "Reconnected to room \(room.name)")
     }
-
+    
     func participantDidConnect(room: Room, participant: RemoteParticipant) {
         // Listen for events from all Participants to decide which RemoteVideoTrack to render.
         participant.delegate = self
-
+        
         logMessage(messageText: "Participant \(participant.identity) connected with \(participant.remoteAudioTracks.count) audio and \(participant.remoteVideoTracks.count) video tracks")
     }
-
+    
     func participantDidDisconnect(room: Room, participant: RemoteParticipant) {
         logMessage(messageText: "Room \(room.name), Participant \(participant.identity) disconnected")
-
+        
         // Nothing to do in this example. Subscription events are used to add/remove renderers.
     }
 }
 
 extension CommunicationViewController: RemoteParticipantDelegate {
-
+    
     func remoteParticipantDidPublishVideoTrack(participant: RemoteParticipant, publication: RemoteVideoTrackPublication) {
         // Remote Participant has offered to share the video Track.
         
         logMessage(messageText: "Participant \(participant.identity) published \(publication.trackName) video track")
     }
-
+    
     func remoteParticipantDidUnpublishVideoTrack(participant: RemoteParticipant, publication: RemoteVideoTrackPublication) {
         // Remote Participant has stopped sharing the video Track.
-
+        
         logMessage(messageText: "Participant \(participant.identity) unpublished \(publication.trackName) video track")
     }
-
+    
     func remoteParticipantDidPublishAudioTrack(participant: RemoteParticipant, publication: RemoteAudioTrackPublication) {
         // Remote Participant has offered to share the audio Track.
-
+        
         logMessage(messageText: "Participant \(participant.identity) published \(publication.trackName) audio track")
     }
-
+    
     func remoteParticipantDidUnpublishAudioTrack(participant: RemoteParticipant, publication: RemoteAudioTrackPublication) {
         // Remote Participant has stopped sharing the audio Track.
-
+        
         logMessage(messageText: "Participant \(participant.identity) unpublished \(publication.trackName) audio track")
     }
-
+    
     func didSubscribeToVideoTrack(videoTrack: RemoteVideoTrack, publication: RemoteVideoTrackPublication, participant: RemoteParticipant) {
         // The LocalParticipant is subscribed to the RemoteParticipant's video Track. Frames will begin to arrive now.
-
+        
         logMessage(messageText: "Subscribed to \(publication.trackName) video track for Participant \(participant.identity)")
-
+        
         if (self.remoteParticipant == nil) {
             _ = renderRemoteParticipant(participant: participant)
         }
@@ -351,23 +376,23 @@ extension CommunicationViewController: RemoteParticipantDelegate {
         // remote Participant's video.
         
         logMessage(messageText: "Unsubscribed from \(publication.trackName) video track for Participant \(participant.identity)")
-
+        
         if self.remoteParticipant == participant {
             cleanupRemoteParticipant()
-
+            
             // Find another Participant video to render, if possible.
             if var remainingParticipants = room?.remoteParticipants,
-                let index = remainingParticipants.firstIndex(of: participant) {
+               let index = remainingParticipants.firstIndex(of: participant) {
                 remainingParticipants.remove(at: index)
                 renderRemoteParticipants(participants: remainingParticipants)
             }
         }
     }
-
+    
     func didSubscribeToAudioTrack(audioTrack: RemoteAudioTrack, publication: RemoteAudioTrackPublication, participant: RemoteParticipant) {
         // We are subscribed to the remote Participant's audio Track. We will start receiving the
         // remote Participant's audio now.
-       
+        
         logMessage(messageText: "Subscribed to \(publication.trackName) audio track for Participant \(participant.identity)")
     }
     
@@ -377,27 +402,27 @@ extension CommunicationViewController: RemoteParticipantDelegate {
         
         logMessage(messageText: "Unsubscribed from \(publication.trackName) audio track for Participant \(participant.identity)")
     }
-
+    
     func remoteParticipantDidEnableVideoTrack(participant: RemoteParticipant, publication: RemoteVideoTrackPublication) {
         logMessage(messageText: "Participant \(participant.identity) enabled \(publication.trackName) video track")
     }
-
+    
     func remoteParticipantDidDisableVideoTrack(participant: RemoteParticipant, publication: RemoteVideoTrackPublication) {
         logMessage(messageText: "Participant \(participant.identity) disabled \(publication.trackName) video track")
     }
-
+    
     func remoteParticipantDidEnableAudioTrack(participant: RemoteParticipant, publication: RemoteAudioTrackPublication) {
         logMessage(messageText: "Participant \(participant.identity) enabled \(publication.trackName) audio track")
     }
-
+    
     func remoteParticipantDidDisableAudioTrack(participant: RemoteParticipant, publication: RemoteAudioTrackPublication) {
         logMessage(messageText: "Participant \(participant.identity) disabled \(publication.trackName) audio track")
     }
-
+    
     func didFailToSubscribeToAudioTrack(publication: RemoteAudioTrackPublication, error: Error, participant: RemoteParticipant) {
         logMessage(messageText: "FailedToSubscribe \(publication.trackName) audio track, error = \(String(describing: error))")
     }
-
+    
     func didFailToSubscribeToVideoTrack(publication: RemoteVideoTrackPublication, error: Error, participant: RemoteParticipant) {
         logMessage(messageText: "FailedToSubscribe \(publication.trackName) video track, error = \(String(describing: error))")
     }
@@ -416,3 +441,4 @@ extension CommunicationViewController : CameraSourceDelegate {
         logMessage(messageText: "Camera source failed with error: \(error.localizedDescription)")
     }
 }
+

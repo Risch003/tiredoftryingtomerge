@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JsU-xr-bes">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Messaging View Controller-->
+        <scene sceneID="ggJ-3O-eRO">
+            <objects>
+                <viewController id="JsU-xr-bes" customClass="MessagingViewController" customModule="WisHope" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cNz-lu-CYu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="L0K-rG-MwA">
+                                <rect key="frame" x="0.0" y="44" width="414" height="32"/>
+                                <segments>
+                                    <segment title="Calling"/>
+                                    <segment title="Messaging"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentAction:" destination="JsU-xr-bes" eventType="valueChanged" id="Ey3-IQ-t9J"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ee4-Q0-nSH">
+                                <rect key="frame" x="0.0" y="75" width="414" height="787"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1RZ-Be-pVI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1RZ-Be-pVI" firstAttribute="trailing" secondItem="Ee4-Q0-nSH" secondAttribute="trailing" id="2mW-ia-1Cu"/>
+                            <constraint firstItem="L0K-rG-MwA" firstAttribute="top" secondItem="1RZ-Be-pVI" secondAttribute="top" id="4EJ-1F-gWe"/>
+                            <constraint firstItem="L0K-rG-MwA" firstAttribute="leading" secondItem="1RZ-Be-pVI" secondAttribute="leading" id="MdD-1F-kQc"/>
+                            <constraint firstItem="1RZ-Be-pVI" firstAttribute="trailing" secondItem="L0K-rG-MwA" secondAttribute="trailing" id="Nho-FD-3hK"/>
+                            <constraint firstItem="Ee4-Q0-nSH" firstAttribute="top" secondItem="L0K-rG-MwA" secondAttribute="bottom" id="Vff-v3-Fbt"/>
+                            <constraint firstItem="Ee4-Q0-nSH" firstAttribute="leading" secondItem="1RZ-Be-pVI" secondAttribute="leading" id="nGv-0Z-WPV"/>
+                            <constraint firstItem="1RZ-Be-pVI" firstAttribute="bottom" secondItem="Ee4-Q0-nSH" secondAttribute="bottom" id="nfm-m4-foX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="segBar" destination="L0K-rG-MwA" id="xGd-ZX-YmA"/>
+                        <outlet property="segView" destination="Ee4-Q0-nSH" id="c3v-fK-m16"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kd1-uh-VIm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104" y="153"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

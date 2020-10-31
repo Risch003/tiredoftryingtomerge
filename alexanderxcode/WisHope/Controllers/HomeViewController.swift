@@ -7,17 +7,23 @@
 //
 
 import UIKit
+import Firebase
 
 /// controls home sotryboard
 class HomeViewController: UIViewController {
+    var role = ""
     override func viewDidLoad() {
        
         super.viewDidLoad()
+        
         
         // Do any additional setup after loading the view.
     }
 
     
+    @IBAction func logoutButtonPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

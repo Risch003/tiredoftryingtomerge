@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53" height="53" viewBox="0 0 53 53">
+  <defs>
+    <filter id="Rectangle_2638" x="0" y="0" width="53" height="53" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#ec222d" flood-opacity="0.718"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="phone" transform="translate(9 8)">
+    <g transform="matrix(1, 0, 0, 1, -9, -8)" filter="url(#Rectangle_2638)">
+      <rect id="Rectangle_2638-2" data-name="Rectangle 2638" width="35" height="35" rx="17.5" transform="translate(9 8)" fill="#ec222d"/>
+    </g>
+    <path id="Icon_feather-phone" data-name="Icon feather-phone" d="M11.28,8.462v1.7A1.134,1.134,0,0,1,10.043,11.3,11.224,11.224,0,0,1,5.149,9.557a11.06,11.06,0,0,1-3.4-3.4A11.224,11.224,0,0,1,0,1.236,1.134,1.134,0,0,1,1.133,0h1.7A1.134,1.134,0,0,1,3.969.976a7.282,7.282,0,0,0,.4,1.594,1.134,1.134,0,0,1-.255,1.2l-.72.72a9.075,9.075,0,0,0,3.4,3.4l.72-.72a1.134,1.134,0,0,1,1.2-.255,7.282,7.282,0,0,0,1.594.4,1.134,1.134,0,0,1,.976,1.151Z" transform="translate(11.813 11.707)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>
