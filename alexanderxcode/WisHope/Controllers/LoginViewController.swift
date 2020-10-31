@@ -11,14 +11,10 @@
 import UIKit
 import FirebaseAuth
 import FirebaseFunctions
-import Firebase
 
 /// Controls login storyboard
 
-var usersRole = ""
-
 class LoginViewController: UIViewController {
-    //let db = Firestore.firestore()
     @IBOutlet weak var emailTextField: UITextField!
     
     @IBOutlet weak var passwordTextField: UITextField!
@@ -31,8 +27,6 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        emailTextField.text = ""
-        passwordTextField.text = ""
         setUpElements()
     }
 
@@ -76,11 +70,11 @@ class LoginViewController: UIViewController {
                     }
                     // ...
                   }
-                  print("logged in /n")
+                  print("workinh \n\n\n\n\n\n\n\n")
                                                             
                 
                 }
-                usersRole = User.uid
+                
                 self.trasitionToHome()
             }
         }
@@ -89,28 +83,9 @@ class LoginViewController: UIViewController {
     
     /// Manally sugues to ../Storyboards/Home.storyboard
     func trasitionToHome(){
-        let db = Firestore.firestore()
-        var role = ""
-//        let homeTabBarController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeTabBarController) as? UITabBarController
-//        view.window?.rootViewController = homeTabBarController
-//        view.window?.makeKeyAndVisible()
-        db.collection("users").document(usersRole).getDocument { (doc, err) in
-                    if err == nil{
-                        if doc != nil && doc!.exists{
-                            let documentData = doc!.data()
-                            role = (documentData!["role"] as! String)
-                            if (role == "coach"){
-                                self.performSegue(withIdentifier: "coach", sender: nil)
-                            } else {
-                                self.performSegue(withIdentifier: "recov", sender: nil)
-                                
-                            }
-                            
-                        }
-                    }
-                }
-        
-        //performSegue(withIdentifier: "coach", sender: nil)
+        let homeTabBarController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeTabBarController) as? UITabBarController
+        view.window?.rootViewController = homeTabBarController
+        view.window?.makeKeyAndVisible()
     }
 }
 

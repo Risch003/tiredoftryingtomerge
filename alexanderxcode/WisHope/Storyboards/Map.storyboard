@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yAw-ED-2pD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tu7-hf-h1N">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -52,9 +52,7 @@
                         <viewLayoutGuide key="safeArea" id="gK8-HX-Rlf"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="RBA" id="ucM-xy-4EH">
-                        <barButtonItem key="rightBarButtonItem" title="logout" image="logout" id="UGo-xT-Xcd"/>
-                    </navigationItem>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="UCv-hp-3hs"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="map" destination="ZMl-AT-11Y" id="6Vy-vn-ALI"/>
@@ -67,35 +65,11 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1313.0434782608697" y="-177.45535714285714"/>
-        </scene>
-        <!--Locations-->
-        <scene sceneID="8Py-fx-0Jt">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yAw-ED-2pD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Locations" image="location" id="UCv-hp-3hs"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uXX-ES-TlQ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.26629416779999998" green="0.5" blue="0.46237377750000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.26629416779999998" green="0.5" blue="0.46237377750000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="tu7-hf-h1N" kind="relationship" relationship="rootViewController" id="Nee-PB-nYg"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="i4p-lx-3Tz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
             <point key="canvasLocation" x="402.89855072463769" y="-177.45535714285714"/>
         </scene>
     </scenes>
     <resources>
-        <image name="location" width="21" height="24.5"/>
-        <image name="logout" width="32" height="31"/>
+        <image name="map" catalog="system" width="128" height="110"/>
         <namedColor name="colorPrimary">
             <color red="0.27843137254901962" green="0.78431372549019607" blue="0.81568627450980391" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

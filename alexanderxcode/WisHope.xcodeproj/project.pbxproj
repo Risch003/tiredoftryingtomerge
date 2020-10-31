@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		232B0F5A254CD41F000A6839 /* Messaging.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 232B0F59254CD41F000A6839 /* Messaging.storyboard */; };
-		232B0F6F254CDEA6000A6839 /* MessagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232B0F6E254CDEA6000A6839 /* MessagingViewController.swift */; };
-		23F96D502543EDB300F57B42 /* HomeCoachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F96D4F2543EDB300F57B42 /* HomeCoachViewController.swift */; };
-		23F96D552543EDDC00F57B42 /* HomeCoach.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23F96D542543EDDC00F57B42 /* HomeCoach.storyboard */; };
 		57622E1AA5E9CD2EFC22E136 /* Pods_WisHopeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE3DE7A654A82034E733E8A /* Pods_WisHopeTests.framework */; };
 		6D03E84824AA7FA50037EF64 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D03E84724AA7FA50037EF64 /* User.swift */; };
 		6D03E84A24C8957B0037EF64 /* OnlineUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D03E84924C8957B0037EF64 /* OnlineUser.swift */; };
@@ -48,6 +44,8 @@
 		C5D41D2E2447D81900ED93FC /* filterTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D41D2C2447D81900ED93FC /* filterTableCell.swift */; };
 		C5D41D2F2447D81900ED93FC /* filterTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5D41D2D2447D81900ED93FC /* filterTableCell.xib */; };
 		C75580A7509DD5BA32053D71 /* Pods_WisHope.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CBDFECD0602F4A334E090E7 /* Pods_WisHope.framework */; };
+		C777548125413DFC0070D2E0 /* CallOnlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C777548025413DFC0070D2E0 /* CallOnlyViewController.swift */; };
+		C77754862543A1620070D2E0 /* OnlineUsersAudioOnlyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77754852543A1620070D2E0 /* OnlineUsersAudioOnlyTableViewController.swift */; };
 		D3BE8C46FCFE8AFFF40946F6 /* Pods_WisHope_WisHopeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C4FBB38DCBC4B0DDCA9909 /* Pods_WisHope_WisHopeUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,10 +67,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		232B0F59254CD41F000A6839 /* Messaging.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Messaging.storyboard; sourceTree = "<group>"; };
-		232B0F6E254CDEA6000A6839 /* MessagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingViewController.swift; sourceTree = "<group>"; };
-		23F96D4F2543EDB300F57B42 /* HomeCoachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoachViewController.swift; sourceTree = "<group>"; };
-		23F96D542543EDDC00F57B42 /* HomeCoach.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeCoach.storyboard; sourceTree = "<group>"; };
 		40230F6A8ECFB28271FCAE8E /* Pods-WisHope-WisHopeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WisHope-WisHopeUITests.debug.xcconfig"; path = "Target Support Files/Pods-WisHope-WisHopeUITests/Pods-WisHope-WisHopeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4B932480F4BE89C1D322F1C0 /* Pods-WisHopeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WisHopeTests.debug.xcconfig"; path = "Target Support Files/Pods-WisHopeTests/Pods-WisHopeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5CBDFECD0602F4A334E090E7 /* Pods_WisHope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WisHope.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +114,8 @@
 		C5B5DF892431295D00EB21C5 /* TableRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRows.swift; sourceTree = "<group>"; };
 		C5D41D2C2447D81900ED93FC /* filterTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = filterTableCell.swift; path = ../Storyboards/filterTableCell.swift; sourceTree = "<group>"; };
 		C5D41D2D2447D81900ED93FC /* filterTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = filterTableCell.xib; sourceTree = "<group>"; };
+		C777548025413DFC0070D2E0 /* CallOnlyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallOnlyViewController.swift; sourceTree = "<group>"; };
+		C77754852543A1620070D2E0 /* OnlineUsersAudioOnlyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineUsersAudioOnlyTableViewController.swift; sourceTree = "<group>"; };
 		C7C4FBB38DCBC4B0DDCA9909 /* Pods_WisHope_WisHopeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WisHope_WisHopeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE3DE7A654A82034E733E8A /* Pods_WisHopeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WisHopeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -252,8 +248,6 @@
 				6DA505D123FA06CC008E4B49 /* Communication.storyboard */,
 				C5D41D2D2447D81900ED93FC /* filterTableCell.xib */,
 				6D19DD8423FA090800F0BAEF /* Login.storyboard */,
-				23F96D542543EDDC00F57B42 /* HomeCoach.storyboard */,
-				232B0F59254CD41F000A6839 /* Messaging.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -274,8 +268,8 @@
 				6D41F165246B55CA00BDFDAA /* ResetPasswordViewController.swift */,
 				6D9A57A324E1EA2100BFE9FD /* OnlineUsersTableViewController.swift */,
 				6D86E25025001753004A8F4C /* FirstComViewController.swift */,
-				23F96D4F2543EDB300F57B42 /* HomeCoachViewController.swift */,
-				232B0F6E254CDEA6000A6839 /* MessagingViewController.swift */,
+				C777548025413DFC0070D2E0 /* CallOnlyViewController.swift */,
+				C77754852543A1620070D2E0 /* OnlineUsersAudioOnlyTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -413,11 +407,9 @@
 				6DB450E325083FB900CB472B /* GoogleService-Info.plist in Resources */,
 				6DA505D223FA06CC008E4B49 /* Communication.storyboard in Resources */,
 				6D19DD8523FA090800F0BAEF /* Login.storyboard in Resources */,
-				232B0F5A254CD41F000A6839 /* Messaging.storyboard in Resources */,
 				6DA505A223FA05EB008E4B49 /* Assets.xcassets in Resources */,
 				6DA505D023FA069D008E4B49 /* Questionnaire.storyboard in Resources */,
 				6DA505CE23FA0673008E4B49 /* Map.storyboard in Resources */,
-				23F96D552543EDDC00F57B42 /* HomeCoach.storyboard in Resources */,
 				6DA505CC23FA0666008E4B49 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -548,13 +540,12 @@
 			files = (
 				6D03E84A24C8957B0037EF64 /* OnlineUser.swift in Sources */,
 				6DAA71772450087600BA62E6 /* navController.swift in Sources */,
+				C77754862543A1620070D2E0 /* OnlineUsersAudioOnlyTableViewController.swift in Sources */,
 				6D1D94EA23FA0C1C005A632E /* QuestionnaireViewController.swift in Sources */,
 				6DC414BF2405821600A38E1D /* Constants.swift in Sources */,
 				6DA505D423FA078C008E4B49 /* LoginViewController.swift in Sources */,
-				232B0F6F254CDEA6000A6839 /* MessagingViewController.swift in Sources */,
 				6D86E25125001753004A8F4C /* FirstComViewController.swift in Sources */,
 				6DA5059923FA05E9008E4B49 /* AppDelegate.swift in Sources */,
-				23F96D502543EDB300F57B42 /* HomeCoachViewController.swift in Sources */,
 				6D41F164246A151E00BDFDAA /* Settings.swift in Sources */,
 				6D9A57A424E1EA2100BFE9FD /* OnlineUsersTableViewController.swift in Sources */,
 				C5D41D2E2447D81900ED93FC /* filterTableCell.swift in Sources */,
@@ -567,6 +558,7 @@
 				6D41F166246B55CA00BDFDAA /* ResetPasswordViewController.swift in Sources */,
 				6DEF138E240060C7008FC732 /* Locations.swift in Sources */,
 				6DC414BD2404DB3B00A38E1D /* Utilities.swift in Sources */,
+				C777548125413DFC0070D2E0 /* CallOnlyViewController.swift in Sources */,
 				6DAA71792450188300BA62E6 /* MainScreenViewController.swift in Sources */,
 				6D1D94E623FA0C05005A632E /* HomeViewController.swift in Sources */,
 				C5B5DF8A2431295D00EB21C5 /* TableRows.swift in Sources */,
@@ -745,7 +737,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.uwp.appfactory.wishopee;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uwp.appfactory.wishopeeeee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -765,7 +757,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.uwp.appfactory.wishopee;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uwp.appfactory.wishopeeeee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -779,6 +771,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LY7W8B4PZD;
 				INFOPLIST_FILE = WisHopeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -801,6 +794,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LY7W8B4PZD;
 				INFOPLIST_FILE = WisHopeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -822,6 +816,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LY7W8B4PZD;
 				INFOPLIST_FILE = WisHopeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -842,6 +837,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LY7W8B4PZD;
 				INFOPLIST_FILE = WisHopeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
