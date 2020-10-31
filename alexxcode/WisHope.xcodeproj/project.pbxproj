@@ -1,0 +1,917 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57622E1AA5E9CD2EFC22E136 /* Pods_WisHopeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE3DE7A654A82034E733E8A /* Pods_WisHopeTests.framework */; };
+		6D03E84824AA7FA50037EF64 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D03E84724AA7FA50037EF64 /* User.swift */; };
+		6D03E84A24C8957B0037EF64 /* OnlineUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D03E84924C8957B0037EF64 /* OnlineUser.swift */; };
+		6D19DD8523FA090800F0BAEF /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D19DD8423FA090800F0BAEF /* Login.storyboard */; };
+		6D1D94E623FA0C05005A632E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D94E523FA0C05005A632E /* HomeViewController.swift */; };
+		6D1D94E823FA0C11005A632E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D94E723FA0C11005A632E /* MapViewController.swift */; };
+		6D1D94EA23FA0C1C005A632E /* QuestionnaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D94E923FA0C1C005A632E /* QuestionnaireViewController.swift */; };
+		6D1D94EC23FA0C2A005A632E /* CommunicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D94EB23FA0C2A005A632E /* CommunicationViewController.swift */; };
+		6D41F1622469FC5100BDFDAA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D41F1612469FC5100BDFDAA /* Utils.swift */; };
+		6D41F164246A151E00BDFDAA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D41F163246A151E00BDFDAA /* Settings.swift */; };
+		6D41F166246B55CA00BDFDAA /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D41F165246B55CA00BDFDAA /* ResetPasswordViewController.swift */; };
+		6D86E25125001753004A8F4C /* FirstComViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D86E25025001753004A8F4C /* FirstComViewController.swift */; };
+		6D9A57A424E1EA2100BFE9FD /* OnlineUsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9A57A324E1EA2100BFE9FD /* OnlineUsersTableViewController.swift */; };
+		6D9A57A524E1EA2100BFE9FD /* OnlineUsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9A57A324E1EA2100BFE9FD /* OnlineUsersTableViewController.swift */; };
+		6D9A57A624E1EA2100BFE9FD /* OnlineUsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9A57A324E1EA2100BFE9FD /* OnlineUsersTableViewController.swift */; };
+		6DA5059923FA05E9008E4B49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA5059823FA05E9008E4B49 /* AppDelegate.swift */; };
+		6DA505A523FA05EB008E4B49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA505A323FA05EB008E4B49 /* LaunchScreen.storyboard */; };
+		6DA505B023FA05EB008E4B49 /* WisHopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA505AF23FA05EB008E4B49 /* WisHopeTests.swift */; };
+		6DA505BB23FA05EB008E4B49 /* WisHopeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA505BA23FA05EB008E4B49 /* WisHopeUITests.swift */; };
+		6DA505CC23FA0666008E4B49 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA505CB23FA0666008E4B49 /* Home.storyboard */; };
+		6DA505CE23FA0673008E4B49 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA505CD23FA0673008E4B49 /* Map.storyboard */; };
+		6DA505D023FA069D008E4B49 /* Questionnaire.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA505CF23FA069D008E4B49 /* Questionnaire.storyboard */; };
+		6DA505D223FA06CC008E4B49 /* Communication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA505D123FA06CC008E4B49 /* Communication.storyboard */; };
+		6DA505D423FA078C008E4B49 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA505D323FA078C008E4B49 /* LoginViewController.swift */; };
+		6DAA71772450087600BA62E6 /* navController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAA71762450087600BA62E6 /* navController.swift */; };
+		6DAA71792450188300BA62E6 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAA71782450188300BA62E6 /* MainScreenViewController.swift */; };
+		6DB450E325083FB900CB472B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6DB450E225083FB900CB472B /* GoogleService-Info.plist */; };
+		6DC414BA240493F000A38E1D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC414B9240493F000A38E1D /* SignUpViewController.swift */; };
+		6DC414BD2404DB3B00A38E1D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC414BC2404DB3B00A38E1D /* Utilities.swift */; };
+		6DC414BF2405821600A38E1D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC414BE2405821600A38E1D /* Constants.swift */; };
+		6DEF138E240060C7008FC732 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF138D240060C7008FC732 /* Locations.swift */; };
+		B02651F6254914CC00AC04F3 /* MapAddressRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02651F5254914CC00AC04F3 /* MapAddressRows.swift */; };
+		B02651FB254922D600AC04F3 /* AnnotationTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B02651FA254922D600AC04F3 /* AnnotationTableCell.xib */; };
+		B0265200254924BB00AC04F3 /* AnnotationTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02651FF254924BB00AC04F3 /* AnnotationTableCell.swift */; };
+		B0265205254A15A100AC04F3 /* imageTableRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0265204254A15A100AC04F3 /* imageTableRows.swift */; };
+		B0B72D562548AE1C00E91D3D /* AnnotationClicked.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B72D552548AE1C00E91D3D /* AnnotationClicked.swift */; };
+		B0C6582D254520760079FDBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0C6582C254520760079FDBD /* Assets.xcassets */; };
+		B0C65840254521C50079FDBD /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6583F254521C50079FDBD /* CustomAnnotationView.swift */; };
+		B0C65845254522F00079FDBD /* CustomPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C65844254522F00079FDBD /* CustomPin.swift */; };
+		C580073B242AB64E00CB1ECF /* MapBottomSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C580073A242AB64E00CB1ECF /* MapBottomSheetController.swift */; };
+		C5B5DF8A2431295D00EB21C5 /* TableRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B5DF892431295D00EB21C5 /* TableRows.swift */; };
+		C5D41D2E2447D81900ED93FC /* filterTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D41D2C2447D81900ED93FC /* filterTableCell.swift */; };
+		C5D41D2F2447D81900ED93FC /* filterTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5D41D2D2447D81900ED93FC /* filterTableCell.xib */; };
+		C75580A7509DD5BA32053D71 /* Pods_WisHope.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CBDFECD0602F4A334E090E7 /* Pods_WisHope.framework */; };
+		D3BE8C46FCFE8AFFF40946F6 /* Pods_WisHope_WisHopeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C4FBB38DCBC4B0DDCA9909 /* Pods_WisHope_WisHopeUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DA505AC23FA05EB008E4B49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DA5058D23FA05E9008E4B49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DA5059423FA05E9008E4B49;
+			remoteInfo = WisHope;
+		};
+		6DA505B723FA05EB008E4B49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DA5058D23FA05E9008E4B49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DA5059423FA05E9008E4B49;
+			remoteInfo = WisHope;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		40230F6A8ECFB28271FCAE8E /* Pods-WisHope-WisHopeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WisHope-WisHopeUITests.debug.xcconfig"; path = "Target Support Files/Pods-WisHope-WisHopeUITests/Pods-WisHope-WisHopeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4B932480F4BE89C1D322F1C0 /* Pods-WisHopeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WisHopeTests.debug.xcconfig"; path = "Target Support Files/Pods-WisHopeTests/Pods-WisHopeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5CBDFECD0602F4A334E090E7 /* Pods_WisHope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WisHope.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A37A76C354C50A9638B965D /* Pods-WisHope-WisHopeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WisHope-WisHopeUITests.release.xcconfig"; path = "Target Support Files/Pods-WisHope-WisHopeUITests/Pods-WisHope-WisHopeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6D03E84724AA7FA50037EF64 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6D03E84924C8957B0037EF64 /* OnlineUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineUser.swift; sourceTree = "<group>"; };
+		6D19DD8423FA090800F0BAEF /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		6D1D94E523FA0C05005A632E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6D1D94E723FA0C11005A632E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		6D1D94E923FA0C1C005A632E /* QuestionnaireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireViewController.swift; sourceTree = "<group>"; };
+		6D1D94EB23FA0C2A005A632E /* CommunicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationViewController.swift; sourceTree = "<group>"; };
+		6D41F1612469FC5100BDFDAA /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		6D41F163246A151E00BDFDAA /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		6D41F165246B55CA00BDFDAA /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		6D86E25025001753004A8F4C /* FirstComViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstComViewController.swift; sourceTree = "<group>"; };
+		6D9A57A224E1CC8800BFE9FD /* WisHope.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WisHope.entitlements; sourceTree = "<group>"; };
+		6D9A57A324E1EA2100BFE9FD /* OnlineUsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineUsersTableViewController.swift; sourceTree = "<group>"; };
+		6DA5059523FA05E9008E4B49 /* WisHope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WisHope.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DA5059823FA05E9008E4B49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6DA505A423FA05EB008E4B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6DA505A623FA05EB008E4B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DA505AB23FA05EB008E4B49 /* WisHopeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WisHopeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DA505AF23FA05EB008E4B49 /* WisHopeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisHopeTests.swift; sourceTree = "<group>"; };
+		6DA505B123FA05EB008E4B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DA505B623FA05EB008E4B49 /* WisHopeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WisHopeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DA505BA23FA05EB008E4B49 /* WisHopeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisHopeUITests.swift; sourceTree = "<group>"; };
+		6DA505BC23FA05EB008E4B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DA505CB23FA0666008E4B49 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		6DA505CD23FA0673008E4B49 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		6DA505CF23FA069D008E4B49 /* Questionnaire.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Questionnaire.storyboard; sourceTree = "<group>"; };
+		6DA505D123FA06CC008E4B49 /* Communication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Communication.storyboard; sourceTree = "<group>"; };
+		6DA505D323FA078C008E4B49 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6DAA71762450087600BA62E6 /* navController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navController.swift; sourceTree = "<group>"; };
+		6DAA71782450188300BA62E6 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		6DB450E225083FB900CB472B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6DC414B9240493F000A38E1D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		6DC414BC2404DB3B00A38E1D /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		6DC414BE2405821600A38E1D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6DEF138D240060C7008FC732 /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
+		94F7AD475E627F96F601193A /* Pods-WisHopeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WisHopeTests.release.xcconfig"; path = "Target Support Files/Pods-WisHopeTests/Pods-WisHopeTests.release.xcconfig"; sourceTree = "<group>"; };
+		A4AA8410F11E9396E30F8213 /* Pods-WisHope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WisHope.release.xcconfig"; path = "Target Support Files/Pods-WisHope/Pods-WisHope.release.xcconfig"; sourceTree = "<group>"; };
+		B02651F5254914CC00AC04F3 /* MapAddressRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAddressRows.swift; sourceTree = "<group>"; };
+		B02651FA254922D600AC04F3 /* AnnotationTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnnotationTableCell.xib; sourceTree = "<group>"; };
+		B02651FF254924BB00AC04F3 /* AnnotationTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationTableCell.swift; sourceTree = "<group>"; };
+		B0265204254A15A100AC04F3 /* imageTableRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageTableRows.swift; sourceTree = "<group>"; };
+		B0B72D552548AE1C00E91D3D /* AnnotationClicked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationClicked.swift; sourceTree = "<group>"; };
+		B0C6582C254520760079FDBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0C6583F254521C50079FDBD /* CustomAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
+		B0C65844254522F00079FDBD /* CustomPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPin.swift; sourceTree = "<group>"; };
+		BED250925ECDE3520F6074B0 /* Pods-WisHope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WisHope.debug.xcconfig"; path = "Target Support Files/Pods-WisHope/Pods-WisHope.debug.xcconfig"; sourceTree = "<group>"; };
+		C580073A242AB64E00CB1ECF /* MapBottomSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBottomSheetController.swift; sourceTree = "<group>"; };
+		C5B5DF892431295D00EB21C5 /* TableRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRows.swift; sourceTree = "<group>"; };
+		C5D41D2C2447D81900ED93FC /* filterTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = filterTableCell.swift; path = ../Storyboards/filterTableCell.swift; sourceTree = "<group>"; };
+		C5D41D2D2447D81900ED93FC /* filterTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = filterTableCell.xib; sourceTree = "<group>"; };
+		C7C4FBB38DCBC4B0DDCA9909 /* Pods_WisHope_WisHopeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WisHope_WisHopeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE3DE7A654A82034E733E8A /* Pods_WisHopeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WisHopeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DA5059223FA05E9008E4B49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C75580A7509DD5BA32053D71 /* Pods_WisHope.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DA505A823FA05EB008E4B49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57622E1AA5E9CD2EFC22E136 /* Pods_WisHopeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DA505B323FA05EB008E4B49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3BE8C46FCFE8AFFF40946F6 /* Pods_WisHope_WisHopeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F63A7BD2345AF0B532D1043 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BED250925ECDE3520F6074B0 /* Pods-WisHope.debug.xcconfig */,
+				A4AA8410F11E9396E30F8213 /* Pods-WisHope.release.xcconfig */,
+				40230F6A8ECFB28271FCAE8E /* Pods-WisHope-WisHopeUITests.debug.xcconfig */,
+				6A37A76C354C50A9638B965D /* Pods-WisHope-WisHopeUITests.release.xcconfig */,
+				4B932480F4BE89C1D322F1C0 /* Pods-WisHopeTests.debug.xcconfig */,
+				94F7AD475E627F96F601193A /* Pods-WisHopeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6D41F1602469FC3600BDFDAA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6D41F1612469FC5100BDFDAA /* Utils.swift */,
+				6D41F163246A151E00BDFDAA /* Settings.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6DA5058C23FA05E9008E4B49 = {
+			isa = PBXGroup;
+			children = (
+				6DA5059723FA05E9008E4B49 /* WisHope */,
+				6DA505AE23FA05EB008E4B49 /* WisHopeTests */,
+				6DA505B923FA05EB008E4B49 /* WisHopeUITests */,
+				6DA5059623FA05E9008E4B49 /* Products */,
+				4F63A7BD2345AF0B532D1043 /* Pods */,
+				E983707C1BD2337271ECD6FA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6DA5059623FA05E9008E4B49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DA5059523FA05E9008E4B49 /* WisHope.app */,
+				6DA505AB23FA05EB008E4B49 /* WisHopeTests.xctest */,
+				6DA505B623FA05EB008E4B49 /* WisHopeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DA5059723FA05E9008E4B49 /* WisHope */ = {
+			isa = PBXGroup;
+			children = (
+				6D9A57A224E1CC8800BFE9FD /* WisHope.entitlements */,
+				6D41F1602469FC3600BDFDAA /* Utils */,
+				6DC414BB2404DB0200A38E1D /* Helpers */,
+				6DA505CA23FA0635008E4B49 /* Controllers */,
+				6DA505C923FA062E008E4B49 /* Storyboards */,
+				6DA505C823FA0624008E4B49 /* Models */,
+				6DA5059823FA05E9008E4B49 /* AppDelegate.swift */,
+				6DB450E225083FB900CB472B /* GoogleService-Info.plist */,
+				B0C6582C254520760079FDBD /* Assets.xcassets */,
+				6DA505A623FA05EB008E4B49 /* Info.plist */,
+			);
+			path = WisHope;
+			sourceTree = "<group>";
+		};
+		6DA505AE23FA05EB008E4B49 /* WisHopeTests */ = {
+			isa = PBXGroup;
+			children = (
+				6DA505AF23FA05EB008E4B49 /* WisHopeTests.swift */,
+				6DA505B123FA05EB008E4B49 /* Info.plist */,
+			);
+			path = WisHopeTests;
+			sourceTree = "<group>";
+		};
+		6DA505B923FA05EB008E4B49 /* WisHopeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6DA505BA23FA05EB008E4B49 /* WisHopeUITests.swift */,
+				6DA505BC23FA05EB008E4B49 /* Info.plist */,
+			);
+			path = WisHopeUITests;
+			sourceTree = "<group>";
+		};
+		6DA505C823FA0624008E4B49 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6DEF138D240060C7008FC732 /* Locations.swift */,
+				C5B5DF892431295D00EB21C5 /* TableRows.swift */,
+				6D03E84724AA7FA50037EF64 /* User.swift */,
+				6D03E84924C8957B0037EF64 /* OnlineUser.swift */,
+				B02651F5254914CC00AC04F3 /* MapAddressRows.swift */,
+				B0265204254A15A100AC04F3 /* imageTableRows.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6DA505C923FA062E008E4B49 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6DA505A323FA05EB008E4B49 /* LaunchScreen.storyboard */,
+				6DA505CB23FA0666008E4B49 /* Home.storyboard */,
+				6DA505CD23FA0673008E4B49 /* Map.storyboard */,
+				6DA505CF23FA069D008E4B49 /* Questionnaire.storyboard */,
+				6DA505D123FA06CC008E4B49 /* Communication.storyboard */,
+				C5D41D2D2447D81900ED93FC /* filterTableCell.xib */,
+				6D19DD8423FA090800F0BAEF /* Login.storyboard */,
+				B02651FA254922D600AC04F3 /* AnnotationTableCell.xib */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6DA505CA23FA0635008E4B49 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6DA505D323FA078C008E4B49 /* LoginViewController.swift */,
+				6D1D94E523FA0C05005A632E /* HomeViewController.swift */,
+				6D1D94E723FA0C11005A632E /* MapViewController.swift */,
+				6D1D94E923FA0C1C005A632E /* QuestionnaireViewController.swift */,
+				C580073A242AB64E00CB1ECF /* MapBottomSheetController.swift */,
+				6D1D94EB23FA0C2A005A632E /* CommunicationViewController.swift */,
+				C5D41D2C2447D81900ED93FC /* filterTableCell.swift */,
+				6DC414B9240493F000A38E1D /* SignUpViewController.swift */,
+				6DAA71762450087600BA62E6 /* navController.swift */,
+				6DAA71782450188300BA62E6 /* MainScreenViewController.swift */,
+				6D41F165246B55CA00BDFDAA /* ResetPasswordViewController.swift */,
+				6D9A57A324E1EA2100BFE9FD /* OnlineUsersTableViewController.swift */,
+				6D86E25025001753004A8F4C /* FirstComViewController.swift */,
+				B0B72D552548AE1C00E91D3D /* AnnotationClicked.swift */,
+				B02651FF254924BB00AC04F3 /* AnnotationTableCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6DC414BB2404DB0200A38E1D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6DC414BC2404DB3B00A38E1D /* Utilities.swift */,
+				6DC414BE2405821600A38E1D /* Constants.swift */,
+				B0C6583F254521C50079FDBD /* CustomAnnotationView.swift */,
+				B0C65844254522F00079FDBD /* CustomPin.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E983707C1BD2337271ECD6FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CBDFECD0602F4A334E090E7 /* Pods_WisHope.framework */,
+				C7C4FBB38DCBC4B0DDCA9909 /* Pods_WisHope_WisHopeUITests.framework */,
+				DFE3DE7A654A82034E733E8A /* Pods_WisHopeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DA5059423FA05E9008E4B49 /* WisHope */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DA505BF23FA05EB008E4B49 /* Build configuration list for PBXNativeTarget "WisHope" */;
+			buildPhases = (
+				D64DB3D5ABCC60CE20A776C9 /* [CP] Check Pods Manifest.lock */,
+				6DA5059123FA05E9008E4B49 /* Sources */,
+				6DA5059223FA05E9008E4B49 /* Frameworks */,
+				6DA5059323FA05E9008E4B49 /* Resources */,
+				AB4C5BE030D276202B44FD13 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WisHope;
+			productName = WisHope;
+			productReference = 6DA5059523FA05E9008E4B49 /* WisHope.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DA505AA23FA05EB008E4B49 /* WisHopeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DA505C223FA05EB008E4B49 /* Build configuration list for PBXNativeTarget "WisHopeTests" */;
+			buildPhases = (
+				660D3D23E8F152C9FFE99CC4 /* [CP] Check Pods Manifest.lock */,
+				6DA505A723FA05EB008E4B49 /* Sources */,
+				6DA505A823FA05EB008E4B49 /* Frameworks */,
+				6DA505A923FA05EB008E4B49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DA505AD23FA05EB008E4B49 /* PBXTargetDependency */,
+			);
+			name = WisHopeTests;
+			productName = WisHopeTests;
+			productReference = 6DA505AB23FA05EB008E4B49 /* WisHopeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6DA505B523FA05EB008E4B49 /* WisHopeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DA505C523FA05EB008E4B49 /* Build configuration list for PBXNativeTarget "WisHopeUITests" */;
+			buildPhases = (
+				5DAB7D6A940B487D90A13467 /* [CP] Check Pods Manifest.lock */,
+				6DA505B223FA05EB008E4B49 /* Sources */,
+				6DA505B323FA05EB008E4B49 /* Frameworks */,
+				6DA505B423FA05EB008E4B49 /* Resources */,
+				0F327C22EEAEF10CEDBC301D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DA505B823FA05EB008E4B49 /* PBXTargetDependency */,
+			);
+			name = WisHopeUITests;
+			productName = WisHopeUITests;
+			productReference = 6DA505B623FA05EB008E4B49 /* WisHopeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DA5058D23FA05E9008E4B49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Kyle Cain";
+				TargetAttributes = {
+					6DA5059423FA05E9008E4B49 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					6DA505AA23FA05EB008E4B49 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 6DA5059423FA05E9008E4B49;
+					};
+					6DA505B523FA05EB008E4B49 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 6DA5059423FA05E9008E4B49;
+					};
+				};
+			};
+			buildConfigurationList = 6DA5059023FA05E9008E4B49 /* Build configuration list for PBXProject "WisHope" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DA5058C23FA05E9008E4B49;
+			productRefGroup = 6DA5059623FA05E9008E4B49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DA5059423FA05E9008E4B49 /* WisHope */,
+				6DA505AA23FA05EB008E4B49 /* WisHopeTests */,
+				6DA505B523FA05EB008E4B49 /* WisHopeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DA5059323FA05E9008E4B49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5D41D2F2447D81900ED93FC /* filterTableCell.xib in Resources */,
+				6DA505A523FA05EB008E4B49 /* LaunchScreen.storyboard in Resources */,
+				6DB450E325083FB900CB472B /* GoogleService-Info.plist in Resources */,
+				6DA505D223FA06CC008E4B49 /* Communication.storyboard in Resources */,
+				6D19DD8523FA090800F0BAEF /* Login.storyboard in Resources */,
+				6DA505D023FA069D008E4B49 /* Questionnaire.storyboard in Resources */,
+				6DA505CE23FA0673008E4B49 /* Map.storyboard in Resources */,
+				B0C6582D254520760079FDBD /* Assets.xcassets in Resources */,
+				6DA505CC23FA0666008E4B49 /* Home.storyboard in Resources */,
+				B02651FB254922D600AC04F3 /* AnnotationTableCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DA505A923FA05EB008E4B49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DA505B423FA05EB008E4B49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F327C22EEAEF10CEDBC301D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WisHope-WisHopeUITests/Pods-WisHope-WisHopeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WisHope-WisHopeUITests/Pods-WisHope-WisHopeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WisHope-WisHopeUITests/Pods-WisHope-WisHopeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DAB7D6A940B487D90A13467 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WisHope-WisHopeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		660D3D23E8F152C9FFE99CC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WisHopeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB4C5BE030D276202B44FD13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WisHope/Pods-WisHope-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WisHope/Pods-WisHope-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WisHope/Pods-WisHope-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D64DB3D5ABCC60CE20A776C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WisHope-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DA5059123FA05E9008E4B49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D03E84A24C8957B0037EF64 /* OnlineUser.swift in Sources */,
+				6DAA71772450087600BA62E6 /* navController.swift in Sources */,
+				6D1D94EA23FA0C1C005A632E /* QuestionnaireViewController.swift in Sources */,
+				B0265200254924BB00AC04F3 /* AnnotationTableCell.swift in Sources */,
+				6DC414BF2405821600A38E1D /* Constants.swift in Sources */,
+				B0265205254A15A100AC04F3 /* imageTableRows.swift in Sources */,
+				6DA505D423FA078C008E4B49 /* LoginViewController.swift in Sources */,
+				B0C65840254521C50079FDBD /* CustomAnnotationView.swift in Sources */,
+				6D86E25125001753004A8F4C /* FirstComViewController.swift in Sources */,
+				6DA5059923FA05E9008E4B49 /* AppDelegate.swift in Sources */,
+				B02651F6254914CC00AC04F3 /* MapAddressRows.swift in Sources */,
+				6D41F164246A151E00BDFDAA /* Settings.swift in Sources */,
+				6D9A57A424E1EA2100BFE9FD /* OnlineUsersTableViewController.swift in Sources */,
+				C5D41D2E2447D81900ED93FC /* filterTableCell.swift in Sources */,
+				6D03E84824AA7FA50037EF64 /* User.swift in Sources */,
+				B0C65845254522F00079FDBD /* CustomPin.swift in Sources */,
+				C580073B242AB64E00CB1ECF /* MapBottomSheetController.swift in Sources */,
+				6D1D94EC23FA0C2A005A632E /* CommunicationViewController.swift in Sources */,
+				6D41F1622469FC5100BDFDAA /* Utils.swift in Sources */,
+				B0B72D562548AE1C00E91D3D /* AnnotationClicked.swift in Sources */,
+				6D1D94E823FA0C11005A632E /* MapViewController.swift in Sources */,
+				6DC414BA240493F000A38E1D /* SignUpViewController.swift in Sources */,
+				6D41F166246B55CA00BDFDAA /* ResetPasswordViewController.swift in Sources */,
+				6DEF138E240060C7008FC732 /* Locations.swift in Sources */,
+				6DC414BD2404DB3B00A38E1D /* Utilities.swift in Sources */,
+				6DAA71792450188300BA62E6 /* MainScreenViewController.swift in Sources */,
+				6D1D94E623FA0C05005A632E /* HomeViewController.swift in Sources */,
+				C5B5DF8A2431295D00EB21C5 /* TableRows.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DA505A723FA05EB008E4B49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DA505B023FA05EB008E4B49 /* WisHopeTests.swift in Sources */,
+				6D9A57A524E1EA2100BFE9FD /* OnlineUsersTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DA505B223FA05EB008E4B49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DA505BB23FA05EB008E4B49 /* WisHopeUITests.swift in Sources */,
+				6D9A57A624E1EA2100BFE9FD /* OnlineUsersTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DA505AD23FA05EB008E4B49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DA5059423FA05E9008E4B49 /* WisHope */;
+			targetProxy = 6DA505AC23FA05EB008E4B49 /* PBXContainerItemProxy */;
+		};
+		6DA505B823FA05EB008E4B49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DA5059423FA05E9008E4B49 /* WisHope */;
+			targetProxy = 6DA505B723FA05EB008E4B49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6DA505A323FA05EB008E4B49 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DA505A423FA05EB008E4B49 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DA505BD23FA05EB008E4B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6DA505BE23FA05EB008E4B49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DA505C023FA05EB008E4B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BED250925ECDE3520F6074B0 /* Pods-WisHope.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WisHope/WisHope.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CRFY5K7L76;
+				INFOPLIST_FILE = WisHope/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uwp.appfactory.wishopeeee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6DA505C123FA05EB008E4B49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4AA8410F11E9396E30F8213 /* Pods-WisHope.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WisHope/WisHope.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CRFY5K7L76;
+				INFOPLIST_FILE = WisHope/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uwp.appfactory.wishopeeee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6DA505C323FA05EB008E4B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B932480F4BE89C1D322F1C0 /* Pods-WisHopeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CRFY5K7L76;
+				INFOPLIST_FILE = WisHopeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SE2.WisHopeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WisHope.app/WisHope";
+			};
+			name = Debug;
+		};
+		6DA505C423FA05EB008E4B49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94F7AD475E627F96F601193A /* Pods-WisHopeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CRFY5K7L76;
+				INFOPLIST_FILE = WisHopeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SE2.WisHopeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WisHope.app/WisHope";
+			};
+			name = Release;
+		};
+		6DA505C623FA05EB008E4B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40230F6A8ECFB28271FCAE8E /* Pods-WisHope-WisHopeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CRFY5K7L76;
+				INFOPLIST_FILE = WisHopeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SE2.WisHopeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WisHope;
+			};
+			name = Debug;
+		};
+		6DA505C723FA05EB008E4B49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A37A76C354C50A9638B965D /* Pods-WisHope-WisHopeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CRFY5K7L76;
+				INFOPLIST_FILE = WisHopeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SE2.WisHopeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WisHope;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DA5059023FA05E9008E4B49 /* Build configuration list for PBXProject "WisHope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DA505BD23FA05EB008E4B49 /* Debug */,
+				6DA505BE23FA05EB008E4B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DA505BF23FA05EB008E4B49 /* Build configuration list for PBXNativeTarget "WisHope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DA505C023FA05EB008E4B49 /* Debug */,
+				6DA505C123FA05EB008E4B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DA505C223FA05EB008E4B49 /* Build configuration list for PBXNativeTarget "WisHopeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DA505C323FA05EB008E4B49 /* Debug */,
+				6DA505C423FA05EB008E4B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DA505C523FA05EB008E4B49 /* Build configuration list for PBXNativeTarget "WisHopeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DA505C623FA05EB008E4B49 /* Debug */,
+				6DA505C723FA05EB008E4B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DA5058D23FA05E9008E4B49 /* Project object */;
+}
